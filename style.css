@@ -355,6 +355,12 @@ h4{
     .home .home-content .text-3{
         font-size: 25px;
     }
+    
+    .textoSobre{
+        width: 400px;
+        height: 430px;
+
+    }
 
     
 }
