@@ -272,6 +272,11 @@ h4{
         text-align: center;
 
     }
+    
+    .map{
+        height: 300px;
+        width: 400px;
+    }
 
 
 }
