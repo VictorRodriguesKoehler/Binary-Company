@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: #333a42;
+    background-color: #4c535e;
+    font-family:'Roboto', sans-serif;
 }
 
 .max-width{
@@ -121,6 +122,25 @@ h4{
     margin-left: -3px;
 }
 
+
+  .text-2::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
 .home .home-content .text-3{
  font-size: 40px;
  margin: 5px 0;
@@ -131,17 +151,6 @@ h4{
 
 }
 
-.serviços{
-    text-align: center;
-    margin-top:50px;
-    color: #e8eaef;
-}
-
-#serviços{
-    margin-top: 50px;
-    margin-bottom: -120px;
-}
-
 .cards{
     display: flex;
     height: 100vh;
@@ -150,7 +159,8 @@ h4{
     font-family:'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
+    margin-bottom: -100px;
+    margin-top: -100px;
 }
 
 .card{
@@ -158,8 +168,10 @@ h4{
     width: 400px;
     height: 300px;
     border-radius: 10px;
+    /* border: 3px solid #E65c5c; */
     text-align: center;
-    background-color: rgb(65,76,86);
+    background-color:white;
+    color: #333a42;
     transition: 1s;
     padding: 10px;
 }
@@ -167,10 +179,17 @@ h4{
 .card:hover{
     transform: scale(1.1);
     z-index: 2;
+    background-color: rgb(255, 255, 148);
 }
+
+.cardContent2{
+    display: flex;
+}
+
 
 .card h3{
     color: rgb(230, 92, 92);
+    margin-bottom: 5px;
 }
 
 .cardImg{
@@ -182,7 +201,13 @@ h4{
     color: #e8eaef;
     text-align: center;
     padding: 30px;
+    background-color: #535f6b;
 }
+
+#sobre{
+    font-size: 40px;
+}
+
 .sobre span{
     color:rgb(230, 92, 92) ;
 }
@@ -209,7 +234,7 @@ h4{
     margin-top: 15px;
     background-color: rgb(65,76,86);
     width: 600px;
-    height: 250px;
+    height: 280px;
     border-radius: 10px;
     transition: 1s;
 }
@@ -240,8 +265,20 @@ h4{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 150px;
+        margin-bottom: 130px;
+        font-size: 15px;
+        /* transform: translateX(400%);
+        transition: transform 0.4s ease; */
     }
+
+    /* .card:nth-of-type(even){
+        transform: translateX(-400%);
+    }
+
+    .card.show{
+        transform: translateX(0);
+    } */
 
     .content1{
         display: flex;
@@ -251,7 +288,7 @@ h4{
     }
     .textoSobre{
         width: 400px;
-        height: 390px;
+        height: 415px;
     }
 
     .footer{
@@ -272,7 +309,7 @@ h4{
         text-align: center;
 
     }
-    
+
     .map{
         height: 300px;
         width: 400px;
@@ -343,13 +380,17 @@ h4{
         font-weight: 500;
 
     }
+
+    .home-content{
+        margin-left: -50px;
+    }
   
     .home .home-content .text-1{
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
     }
     .home .home-content .text-2{
-        font-size: 30px;
+        font-size: 35px;
         padding: 10px;
     }
     .home .home-content .text-3{
